@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteRule ^index$ index.php
+RewriteRule ^userC$ src/Controller/UserController.php
+RewriteRule ^produitC$ src/Controller/ProduitController.php
+RewriteRule ^accueil$ accueil.php
+RewriteRule ^listeProduit$ src/View/Produit/list.php
+RewriteRule ^addProd$ src/View/Produit/add.php
