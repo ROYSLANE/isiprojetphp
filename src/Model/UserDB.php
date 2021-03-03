@@ -9,7 +9,7 @@
     }
 
     function findUserbyID($id){
-        $sql="SELECT * FROM USER WHERE email='$id'";
+        $sql="SELECT * FROM USER WHERE idU='$id'";
         global $db;
         return $db->query($sql)->fetch();
     }

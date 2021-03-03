@@ -7,6 +7,9 @@ require_once 'db.php';
     }
 
     function addProduit($idUser,$nom,$ref,$qte){
-        $sql = "INSERT INTO PRODUIT VALUES ('$idUser',null,)"
+        $sql = "INSERT INTO PRODUIT VALUES ($idUser,null,'$nom','$ref',$qte)";
+        global $db;
+
+        return $db->exec($sql);
     }
 ?>
